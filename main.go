@@ -14,10 +14,10 @@ func main() {
 	var r *chi.Mux = chi.NewRouter()
 
 	//handlers
-	r.Post("/catalouge", handlers.CreateItem)
-	r.Get("/catalouge/{id}", handlers.GetItem)
-	r.Put("/catalouge/{id}", handlers.UpdateItem)
-	r.Delete("/catalouge/{id}", handlers.DeleteItem)
+	r.Post("/catalouge/post", handlers.CreateItem)
+	r.Get("/catalouge/get{id}", handlers.GetItem)
+	r.Put("/catalouge/put{id}", handlers.UpdateItem)
+	r.Delete("/catalouge/delete{id}", handlers.DeleteItem)
 
 	fmt.Println("Starting API...")
 	err := http.ListenAndServe("localhost:8080", r)

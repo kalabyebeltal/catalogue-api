@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"catalouge-api/config"
-	"catalouge-api/models"
+	"catalogue-api/config"
+	"catalogue-api/models"
 )
 
 // post (done)

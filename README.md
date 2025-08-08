@@ -1,6 +1,6 @@
 
 
-# Catalouge Service
+# Catalogue Service
 
 A simple microservice with endpoints to get/add information about, add new, and delete items off a database.
 
@@ -21,8 +21,8 @@ This application is built using **GoLang**, **Chi** router for handling HTTP req
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/kalabyebeltal/catalouge-api.git
-cd catalouge-api
+git clone https://github.com/kalabyebeltal/catalogue-api.git
+cd catalogue-api
 ```
 
 ### 2. Set up environment variables
@@ -47,8 +47,8 @@ go run cmd/main.go
 
 The application will start on the default port **8080**. You can visit the following endpoints:
 
-- `http://localhost:8080/catalouge`
-- `http://localhost:8080/catalouge/post`
-- `http://localhost:8080/catalouge/get{id}`
-- `http://localhost:8080/catalouge/update{id}`
-- `http://localhost:8080/catalouge/delete{id}`
+- `http://localhost:8080/catalogue`
+- `http://localhost:8080/catalogue/post`
+- `http://localhost:8080/catalogue/get{id}`
+- `http://localhost:8080/catalogue/update{id}`
+- `http://localhost:8080/catalogue/delete{id}`

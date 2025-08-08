@@ -16,7 +16,7 @@ func main() {
 	//handlers
 	r.Post("/catalouge/post", handlers.CreateItem)
 	r.Get("/catalouge/get{id}", handlers.GetItem)
-	r.Put("/catalouge/put{id}", handlers.UpdateItem)
+	r.Put("/catalouge/update{id}", handlers.UpdateItem)
 	r.Delete("/catalouge/delete{id}", handlers.DeleteItem)
 
 	fmt.Println("Starting API...")

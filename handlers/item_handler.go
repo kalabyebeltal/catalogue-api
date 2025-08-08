@@ -102,3 +102,16 @@ func DeleteItem(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNoContent) // no content (204)
 
 }
+
+func GetAllItems(w http.ResponseWriter, r *http.Request) {
+	var itemSlice []models.Item
+	result := config.Db.Find(&itemSlice)
+	if result.Error != nil {
+		http.Error(w, "Could not retrieve items", http.StatusInternalServerError)
+		return
+	}
+
+	// Return all items as JSON
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(itemSlice)
+}

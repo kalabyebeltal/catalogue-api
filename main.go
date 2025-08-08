@@ -14,6 +14,7 @@ func main() {
 	var r *chi.Mux = chi.NewRouter()
 
 	//handlers
+	r.Get("/catalouge", handlers.GetAllItems)
 	r.Post("/catalouge/post", handlers.CreateItem)
 	r.Get("/catalouge/get{id}", handlers.GetItem)
 	r.Put("/catalouge/update{id}", handlers.UpdateItem)

@@ -42,7 +42,7 @@ go mod tidy
 To run the application locally:
 
 ```sh
-go run cmd/main.go
+go run main.go
 ```
 
 The application will start on the default port **8080**. You can visit the following endpoints:

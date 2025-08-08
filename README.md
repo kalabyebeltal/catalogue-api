@@ -27,7 +27,7 @@ cd catalogue-api
 
 ### 2. Set up environment variables
 
-Create a `.env` file in the root of the project to store your database credentials and other configuration settings. Check `.env.example` file
+Create a `.env` file in the root of the project to store your database credentials and other configuration settings.
 
 ### 3. Install Go dependencies
 

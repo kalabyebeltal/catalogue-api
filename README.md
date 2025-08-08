@@ -47,6 +47,7 @@ go run cmd/main.go
 
 The application will start on the default port **8080**. You can visit the following endpoints:
 
+- `http://localhost:8080/catalouge`
 - `http://localhost:8080/catalouge/post`
 - `http://localhost:8080/catalouge/get{id}`
 - `http://localhost:8080/catalouge/update{id}`
